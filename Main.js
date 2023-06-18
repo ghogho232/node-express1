@@ -3,9 +3,9 @@ const session = require('express-session')
 const bodyParser = require('body-parser');
 const FileStore = require('session-file-store')(session)
 
-var authRouter = require('auth');
-var authCheck = require('authCheck.js');
-var template = require('template.js');
+var authRouter = require('/auth');
+var authCheck = require('/authCheck.js');
+var template = require('/template.js');
 
 const app = express()
 const port = 3000
